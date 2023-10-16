@@ -1,40 +1,52 @@
 .title {
 display: flex;
 justify-content: center;
+align-items: center;
 font-size: 40px;
-margin-bottom: -50px;
+font-weight: bold;
+font-size: 50px;
+color: gold;
+text-shadow: 100px black;
+font-style: italic;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+margin-top: -20px;
 }
 
 .big-container {
-  display: flex;
   justify-content: center;
+  background-color: red;
+  margin: 0px 450px;
+  border: 3px solid darkred;
+  border-radius: 20px;
+  margin-top: 100px;
+  padding: 50px;
 }
 
 .container {
   display: grid;
   height: 500px;
   width: 500px;
-  justify-content: center;
-  align-content: center;
-  margin-top: 100px;
-  flex-wrap: nowrap;
+  margin-left: 150px;
+  border: 5px solid black;
+  border-radius: 10px;
 }
 
 .div-element {
-  border:.01px solid black;
+  background-color: lightgray;
 }
 
 .buttons {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
   gap: 20px;
-  margin-bottom: 50px;
+  margin-top: 40px;
 }
 
 .button-text {
   font-size: 20px;
   padding: 15px;
+  background-color: lightgray;
+  border-radius: 10px;
 }
 
 .hover {
@@ -47,4 +59,15 @@ margin-bottom: -50px;
 
 .white {
   background-color: white;
+}
+
+.circle {
+  padding: 10px;
+  background-color: white;
+  border: 20px solid white;
+  border-radius: 100000000000px;
+}
+
+.inner-buttons {
+  margin: 0px 130px;
 }

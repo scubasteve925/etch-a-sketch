@@ -76,7 +76,8 @@ function resizeGrid() {
   } else if(size > 100) {
   alert('error too big')
   createGrid(16)
-  } else(createGrid(size))
+  }
+  else(createGrid(size))
   draw();
   })
 }
