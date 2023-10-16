@@ -58,7 +58,7 @@ margin-top: -20px;
 }
 
 .white {
-  background-color: white;
+  background-color: lightgray;
 }
 
 .circle {
@@ -69,5 +69,8 @@ margin-top: -20px;
 }
 
 .inner-buttons {
-  margin: 0px 130px;
+  display: flex;
+  gap: 10px;
+  margin: 0px 110px;
+  padding-right: 1px;
 }

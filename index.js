@@ -1,7 +1,7 @@
 const container = document.querySelector('.container');
 
 createGrid(16);
-draw();
+
 resetGrid();
 resizeGrid();
 
@@ -13,7 +13,7 @@ drawButton.addEventListener('click', e => {
 
 let eraserButton = document.querySelector('.eraser-button')
 
-eraserButton.addEventListener('click', e => {
+eraserButton.addEventListener('click', () => {
   eraser();
 })
 
@@ -42,8 +42,7 @@ function draw() {
   let grid = document.querySelectorAll('.div-element')
   
   for(let i=0;i<grid.length;i++) {
-    grid[i].addEventListener('click', e => {
-      console.log('working')
+    grid[i].addEventListener('mouseover', e => {
       grid[i].classList.remove('white')
       grid[i].classList.add('black')
     })
@@ -54,7 +53,7 @@ function eraser() {
   let grid = document.querySelectorAll('.div-element')
   
   for(let i=0;i<grid.length;i++) {
-    grid[i].addEventListener('click', e => {
+    grid[i].addEventListener('mouseover', e => {
       grid[i].classList.remove('black')
       grid[i].classList.add('white')
     })
@@ -76,8 +75,7 @@ function resizeGrid() {
   } else if(size > 100) {
   alert('error too big')
   createGrid(16)
-  }
-  else(createGrid(size))
+  } else(createGrid(size))
   draw();
   })
 }
